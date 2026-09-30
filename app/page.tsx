@@ -156,7 +156,7 @@ export default function Page() {
           <div className="hero-bio">
             <p>
               De forma simples: eu entro no negócio, entendo o cenário e trabalho
-              para transformar isso em marketing que gere movimento.
+              para transformar isso em marketing que gere vendas.
             </p>
 
             <p>
