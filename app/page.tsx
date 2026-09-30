@@ -234,12 +234,12 @@ export default function Page() {
           <div className="hero-bio">
             <p>
               De forma simples: eu entro no negócio, entendo o cenário e
-              trabalho para transformar isso em marketing que gere movimento.
+              trabalho para transformar isso em marketing que gere vendas.
             </p>
 
             <p>
               Isso pode passar por posicionamento, campanhas, conteúdo, mídia,
-              vendas ou automação. Depende do que o negócio precisa.
+               ou automação. Depende do que o negócio precisa.
             </p>
           </div>
 
