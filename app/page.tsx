@@ -46,26 +46,26 @@ const cases: CaseItem[] = [
   {
     name: 'OBJETIVO BARÃO GERALDO',
     category: 'Marketing · Estratégia · Posicionamento · Performance',
-    result: '1.377 leads · 126 matrículas',
+    result: '1.377 leads · 455 visitas · 126 matrículas',
     period: 'A partir de outubro de 2025.',
     context:
       'Fortalecer o posicionamento da unidade de Barão Geraldo considerando sua localização e concorrência, preservando a força da marca Objetivo e sua reputação acadêmica, mas comunicando também a experiência escolar, educação infantil, ambiente e equipe.',
     work:
       'Posicionamento, campanhas de aquisição, conteúdo, comunicação de projetos pedagógicos, eventos, rotina escolar e ações como Desafio de Bolsas e Objetivo Day.',
     impact:
-      '1.377 leads · 455 visitas realizadas · 126 matrículas',
+      '1.377 leads · 455 visitas realizadas · 126 matrículas.',
   },
   {
     name: 'OBJETIVO CAMBUÍ',
     category: 'Marketing · Performance · Aquisição · Estratégia Comercial',
-    result: '1.770 leads · 141 matrículas',
+    result: '1.770 leads · 602 visitas · 141 matrículas',
     period: 'A partir de outubro de 2025.',
     context:
       'Fortalecer a aquisição para uma unidade focada em Ensino Fundamental Anos Finais e Ensino Médio.',
     work:
       'Aquisição, comunicação e estruturação da jornada comercial.',
     impact:
-      '1.770 leads · 602 visitas realizadas · 141 matrículas',
+      '1.770 leads · 602 visitas realizadas · 141 matrículas.',
   },
   {
     name: 'PRIVILLEGE VEÍCULOS',
@@ -141,7 +141,6 @@ export default function Page() {
 
   return (
     <main className="site-shell">
-
       <nav className="nav-wrap" aria-label="Navegação principal">
         <a className="brand" href="#top">
           <img
@@ -154,15 +153,19 @@ export default function Page() {
           <a href="#sobre" onClick={() => setMenuOpen(false)}>
             Sobre
           </a>
+
           <a href="#trabalho" onClick={() => setMenuOpen(false)}>
             Trabalho
           </a>
+
           <a href="#portfolio" onClick={() => setMenuOpen(false)}>
             Portfólio
           </a>
+
           <a href="#pensamento" onClick={() => setMenuOpen(false)}>
             Como penso
           </a>
+
           <a href="#contato" onClick={() => setMenuOpen(false)}>
             Contato
           </a>
@@ -181,9 +184,10 @@ export default function Page() {
         </button>
       </nav>
 
+      {/* HERO */}
+
       <section className="hero" id="top">
         <div className="hero-copy">
-
           <div className="hero-mobile-portrait">
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/home%20quadrado-Ft66HyVpbpnI3kXc8kNUgROzmbJSGw.png"
@@ -225,12 +229,12 @@ export default function Page() {
           <div className="hero-bio">
             <p>
               De forma simples: eu entro no negócio, entendo o cenário e
-              trabalho para transformar isso em marketing que gere vendas.
+              trabalho para transformar isso em marketing que gere movimento.
             </p>
 
             <p>
-              Isso pode passar por posicionamento, campanhas, conteúdo, mídia
-              ou automação. Depende do que o negócio precisa.
+              Isso pode passar por posicionamento, campanhas, conteúdo, mídia,
+              vendas ou automação. Depende do que o negócio precisa.
             </p>
           </div>
 
@@ -256,9 +260,7 @@ export default function Page() {
           </div>
 
           <div className="hero-actions">
-
             <a className="button button-dark" href="#contato">
-
               <svg
                 width="17"
                 height="17"
@@ -271,23 +273,20 @@ export default function Page() {
                   fill="currentColor"
                 />
               </svg>
-
               Fale comigo
             </a>
 
             <a className="button button-work" href="#trabalho">
               Conheça o meu trabalho <ArrowDown size={16} />
             </a>
-
           </div>
-
         </div>
       </section>
 
+      {/* COMO EU PENSO */}
+
       <section className="thinking section" id="pensamento">
-        <div className="section-kicker">
-          / 01 — COMO EU PENSO
-        </div>
+        <div className="section-kicker">/ 01 — COMO EU PENSO</div>
 
         <div className="thinking-grid">
           <div>
@@ -326,6 +325,8 @@ export default function Page() {
         </div>
       </section>
 
+      {/* EMPRESAS */}
+
       <section
         className="trusted-companies"
         aria-label="Empresas que confiam no meu trabalho"
@@ -351,6 +352,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      {/* CASES */}
 
       <section className="work section" id="trabalho">
         <div className="section-head">
@@ -405,9 +408,7 @@ export default function Page() {
                   aria-hidden={!isOpen}
                 >
                   <div className="case-expanded-inner">
-
                     <div className="case-detail-column">
-
                       {item.period && (
                         <div className="case-detail">
                           <b>Período</b>
@@ -424,11 +425,9 @@ export default function Page() {
 
                         <p>{item.context}</p>
                       </div>
-
                     </div>
 
                     <div className="case-detail-column">
-
                       <div className="case-detail">
                         <b>
                           {item.name.includes('OBJETIVO')
@@ -455,7 +454,6 @@ export default function Page() {
                             </p>
                           </div>
                         )}
-
                     </div>
 
                     {item.impact && (
@@ -469,7 +467,6 @@ export default function Page() {
                         <p>{item.impact}</p>
                       </div>
                     )}
-
                   </div>
                 </div>
               </div>
@@ -477,6 +474,8 @@ export default function Page() {
           })}
         </div>
       </section>
+
+      {/* PORTFÓLIO */}
 
       <section className="portfolio section" id="portfolio">
         <div className="section-kicker">
@@ -497,14 +496,12 @@ export default function Page() {
         </div>
 
         <div className="portfolio-grid">
-
           <div className="portfolio-piece portfolio-piece-large">
             <span>IMAGEM / CAMPANHA</span>
             <b>Em breve</b>
           </div>
 
           <article className="portfolio-piece portfolio-piece-video">
-
             <div className="portfolio-video">
               <iframe
                 src="https://player.vimeo.com/video/1231413240?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -518,16 +515,16 @@ export default function Page() {
               <span>VÍDEO / CONTEÚDO</span>
               <b>Congresso</b>
             </div>
-
           </article>
 
           <div className="portfolio-piece portfolio-piece-small">
             <span>IDENTIDADE VISUAL</span>
             <b>Em breve</b>
           </div>
-
         </div>
       </section>
+
+      {/* MÉTODO */}
 
       <section className="method section">
         <div className="section-kicker">
@@ -552,6 +549,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      {/* CONTATO */}
 
       <section className="contact section" id="contato">
         <div className="section-kicker">
@@ -590,7 +589,6 @@ export default function Page() {
 
         <small>© 2025 Gustavo Moscardi</small>
       </footer>
-
     </main>
   )
 }
