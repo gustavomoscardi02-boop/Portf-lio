@@ -183,6 +183,11 @@ export default function Page() {
             </a>
           </div>
 
+          <div className="hero-portrait" aria-hidden="true">
+            <div className="hero-ring" />
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/home%20quadrado-Ft66HyVpbpnI3kXc8kNUgROzmbJSGw.png" alt="" />
+          </div>
+
         </div>
       </section>
 
